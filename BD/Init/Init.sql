@@ -1,19 +1,25 @@
+
 CREATE DATABASE GeoMonikerDB
 GO
 USE GeoMonikerDB
 GO
-CREATE TABLE tbl_AddressType
-(
-	AddressTypeId int primary key identity,
-	Name varchar(50)
-)
 
+CREATE TABLE tbl_Company
+(
+	CompanyId bigint primary key identity,
+	CompanyName varchar(100) unique,
+	FoundationDate datetime,
+	ContactPhone varchar(10),
+	Representative varchar(50),
+	Active bit,
+	CreatedDate datetime,
+	UpdateDate datetime
+)
 GO
 
-CREATE TABLE tbl_Address
+CREATE TABLE tbl_AddressCompany
 (
 	AddressId bigint primary key identity,
-	AddressTypeId int,
 	Street varchar(100),
 	InStreetNumber varchar(20),
 	ExStreetNumber varchar(20),
@@ -25,24 +31,9 @@ CREATE TABLE tbl_Address
 	Longitude decimal(10,8),
 	Active bit,
 	CreatedDate datetime,
-	UpdateDate datetime
-	foreign key(AddressTypeId) references tbl_AddressType
-)
-
-GO
-
-CREATE TABLE tbl_Company
-(
-	CompanyId bigint primary key identity,
-	CompanyName varchar(100) unique,
-	FoundationDate datetime,
-	ContactPhone varchar(10),
-	Representative varchar(50),
-	AddressId bigint,
-	Active bit,
-	CreatedDate datetime,
 	UpdateDate datetime,
-	foreign key(AddressId) references tbl_address
+	CompanyId bigint,
+	foreign key(CompanyId) references tbl_Company
 )
 
 GO
@@ -63,7 +54,6 @@ CREATE TABLE tbl_User
 	Email varchar(50),
 	UserName varchar(50) not null,
 	[Password] varchar(50) not null,
-	AddressId bigint,
 	CompanyId bigint not null,
 	Active bit,
 	CreatedDate datetime,
@@ -71,11 +61,30 @@ CREATE TABLE tbl_User
 	UserInsert bigint,
 	UserUpdate bigint,
 	UserType int,
-	foreign key (AddressId) references tbl_address,
 	foreign key (CompanyId) references tbl_Company,
 	foreign key (UserInsert) references tbl_User,
 	foreign key (UserUpdate) references tbl_User,
 	foreign key (UserType) references tbl_UserType
+)
+GO
+
+CREATE TABLE tbl_AddressUser
+(
+	AddressId bigint primary key identity,
+	Street varchar(100),
+	InStreetNumber varchar(20),
+	ExStreetNumber varchar(20),
+	Neighborhood varchar(50),
+	City varchar(20),
+	[State] varchar(50),
+	Country varchar(50),
+	Latitude decimal(10,8),
+	Longitude decimal(10,8),
+	Active bit,
+	CreatedDate datetime,
+	UpdateDate datetime,
+	CompanyId bigint,
+	foreign key(UserId) references tbl_User
 )
 
 GO

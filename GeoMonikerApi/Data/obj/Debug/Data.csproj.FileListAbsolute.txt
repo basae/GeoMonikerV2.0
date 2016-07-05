@@ -1,0 +1,7 @@
+c:\users\ebastar\documents\visual studio 2012\Projects\GeoMonikerApi\Data\bin\Debug\Data.dll
+c:\users\ebastar\documents\visual studio 2012\Projects\GeoMonikerApi\Data\bin\Debug\Data.pdb
+c:\users\ebastar\documents\visual studio 2012\Projects\GeoMonikerApi\Data\bin\Debug\Model.dll
+c:\users\ebastar\documents\visual studio 2012\Projects\GeoMonikerApi\Data\bin\Debug\Model.pdb
+c:\users\ebastar\documents\visual studio 2012\Projects\GeoMonikerApi\Data\obj\Debug\Data.csprojResolveAssemblyReference.cache
+c:\users\ebastar\documents\visual studio 2012\Projects\GeoMonikerApi\Data\obj\Debug\Data.dll
+c:\users\ebastar\documents\visual studio 2012\Projects\GeoMonikerApi\Data\obj\Debug\Data.pdb

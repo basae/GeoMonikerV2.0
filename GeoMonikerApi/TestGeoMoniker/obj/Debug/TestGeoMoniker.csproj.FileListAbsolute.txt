@@ -1,0 +1,10 @@
+c:\users\ebastar\documents\visual studio 2012\Projects\GeoMonikerApi\TestGeoMoniker\obj\Debug\TestGeoMoniker.csprojResolveAssemblyReference.cache
+c:\users\ebastar\documents\visual studio 2012\Projects\GeoMonikerApi\TestGeoMoniker\bin\Debug\TestGeoMoniker.dll.config
+c:\users\ebastar\documents\visual studio 2012\Projects\GeoMonikerApi\TestGeoMoniker\bin\Debug\TestGeoMoniker.dll
+c:\users\ebastar\documents\visual studio 2012\Projects\GeoMonikerApi\TestGeoMoniker\bin\Debug\TestGeoMoniker.pdb
+c:\users\ebastar\documents\visual studio 2012\Projects\GeoMonikerApi\TestGeoMoniker\bin\Debug\Data.dll
+c:\users\ebastar\documents\visual studio 2012\Projects\GeoMonikerApi\TestGeoMoniker\bin\Debug\Model.dll
+c:\users\ebastar\documents\visual studio 2012\Projects\GeoMonikerApi\TestGeoMoniker\bin\Debug\Data.pdb
+c:\users\ebastar\documents\visual studio 2012\Projects\GeoMonikerApi\TestGeoMoniker\bin\Debug\Model.pdb
+c:\users\ebastar\documents\visual studio 2012\Projects\GeoMonikerApi\TestGeoMoniker\obj\Debug\TestGeoMoniker.dll
+c:\users\ebastar\documents\visual studio 2012\Projects\GeoMonikerApi\TestGeoMoniker\obj\Debug\TestGeoMoniker.pdb
